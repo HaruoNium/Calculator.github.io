@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="design" href="design.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display"></div>
+        <div>
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="toggleSign()">+/-</button>
+            <button onclick="percentage()">%</button>
+            <button onclick="operate('/')">÷</button>
+        </div>
+        <div>
+            <button onclick="inputDigit(7)">7</button>
+            <button onclick="inputDigit(8)">8</button>
+            <button onclick="inputDigit(9)">9</button>
+            <button onclick="operate('*')">×</button>
+        </div>
+        <div>
+            <button onclick="inputDigit(4)">4</button>
+            <button onclick="inputDigit(5)">5</button>
+            <button onclick="inputDigit(6)">6</button>
+            <button onclick="operate('-')">-</button>
+        </div>
+        <div>
+            <button onclick="inputDigit(1)">1</button>
+            <button onclick="inputDigit(2)">2</button>
+            <button onclick="inputDigit(3)">3</button>
+            <button onclick="operate('+')">+</button>
+        </div>
+        <div>
+            <button id="zero-btn" onclick="inputDigit(0)">0</button>
+            <button onclick="addDecimalPoint()">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
